@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "internal-google-ads-tool",
+    "name": "Google Ads Publishing Tool",
+    "summary": "Built an internal tool that uses Google Ads API to publish and manage campaigns, account budgets, and ads for clients",
+    "impact": "Automated workflows and increased productivity with less errors than working in Google Ads UI",
+    "stack": ["React", "Laravel", "MUI", "Google Ads API"],
+    "repo": "PRIVATE",
+    "caseStudy": "/projects/internal-google-ads-tool"
+  }
+]
