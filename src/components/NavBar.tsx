@@ -9,12 +9,14 @@ const homeLinks = [
   { href: "#experience", label: "Work Experience" },
   { href: "#education", label: "Education" },
   { href: "#achievements", label: "Achievements" },
+  { href: "/site-info", label: "Site Info" },
   { href: "#contact", label: "Contact" },
 ];
 
 const siteLinks = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/site-info", label: "Site Info" },
 ];
 
 export default function NavBar() {
