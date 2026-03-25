@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const selectedImpact = [
   "Led development of an internal Google Ads campaign platform used by digital marketing teams to manage client accounts and campaigns.",
@@ -199,23 +200,31 @@ export default function Home() {
           engineering, product, and making useful things better.
         </p>
         <div className="mt-7 flex flex-wrap gap-4 pb-4">
-          <a className="cta-btn" href="mailto:asu23justice@gmail.com">
+          <a
+            className="cta-btn inline-flex items-center gap-3"
+            href="mailto:asu23justice@gmail.com"
+          >
+            <Mail className="h-5 w-5" aria-hidden="true" />
             Email Me
           </a>
           <a
-            className="inline-flex items-center justify-center rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
+            className="inline-flex items-center justify-center gap-3 rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
             href="https://www.linkedin.com/in/david-c-justice/"
             target="_blank"
             rel="noreferrer"
           >
+            <Linkedin className="h-5 w-5" aria-hidden="true" />
             LinkedIn
           </a>
-          {/* <Link
-            className="inline-flex items-center justify-center rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
-            href="/projects"
+          <a
+            className="inline-flex items-center justify-center gap-3 rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
+            href="https://www.instagram.com/asu23justice/"
+            target="_blank"
+            rel="noreferrer"
           >
-            View Projects
-          </Link> */}
+            <Instagram className="h-5 w-5" aria-hidden="true" />
+            @asu23justice
+          </a>
         </div>
       </section>
     </main>
