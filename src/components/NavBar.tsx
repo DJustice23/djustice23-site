@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const showSiteInfo = process.env.NODE_ENV !== "production";
+
 const homeLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -11,19 +13,23 @@ const homeLinks = [
   { href: "#projects", label: "Featured Work" },
   { href: "#experience", label: "Work Experience" },
   { href: "#education", label: "Education" },
-  { href: "/site-info", label: "Site Info" },
   { href: "#contact", label: "Contact" },
 ];
 
 const siteLinks = [
   { href: "/", label: "Home" },
-  //{ href: "/projects", label: "Projects" },
-  { href: "/site-info", label: "Site Info" },
 ];
 
 export default function NavBar() {
   const pathname = usePathname();
-  const links = pathname === "/" ? homeLinks : siteLinks;
+  const links =
+    pathname === "/"
+      ? showSiteInfo
+        ? [...homeLinks, { href: "/site-info", label: "Site Info" }]
+        : homeLinks
+      : showSiteInfo
+        ? [...siteLinks, { href: "/site-info", label: "Site Info" }]
+        : siteLinks;
   const sectionLinks = homeLinks.filter((link) => link.href.startsWith("#"));
   const [activeSectionHref, setActiveSectionHref] = useState("#home");
 
