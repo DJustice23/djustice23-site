@@ -4,6 +4,12 @@ import type { Project } from "@/content/types";
 
 const projects = projectsData as Project[];
 
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export default async function ProjectDetail({
   params,
 }: {
