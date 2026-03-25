@@ -17,11 +17,6 @@ export default function ProjectsPage() {
             <p className="mt-1 text-xs text-[#4a5f86]">Stack: {p.stack.join(", ")}</p>
             <div className="mt-3 flex gap-3 text-sm underline">
               <Link href={`/projects/${p.slug}`}>Case study</Link>
-              {p.repo && (
-                <a href={p.repo} target="_blank" rel="noreferrer">
-                  Repo
-                </a>
-              )}
             </div>
           </li>
         ))}

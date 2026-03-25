@@ -1,130 +1,101 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const achievements = [
-  "Delivered an 18% bundle reduction and improved task completion by 12% on a legacy panel redesign.",
-  "Established UI architecture and testing patterns that reduced regressions across shared frontend modules.",
-  "Led cross-functional delivery from discovery to production for enterprise reporting and search features.",
+const selectedImpact = [
+  "Led development of an internal Google Ads campaign platform used by digital marketing teams to manage client accounts and campaigns.",
+  "Modernized CRM contact workflows across multiple repositories, including redesigns, responsiveness, and refactors while preserving legacy business rules.",
+  "Resolved SQL and Elasticsearch parity issues affecting segmentation, visibility, permissions, and search reliability.",
+  "Progressed from support and QA into senior engineering, bringing a strong debugging and reliability mindset into full-stack delivery.",
+  "Helped shape workflow-heavy CRM features and integrations around how brokerages and agents actually operate in the real world.",
+];
+
+const featuredWork = [
+  {
+    title: "Internal Google Ads Platform",
+    description:
+      "Served as the sole frontend engineer for an internal campaign platform used by digital marketing teams, shaping early architecture in React/MUI and supporting backend workflows including Google Ads API research and account import tooling.",
+    href: "/projects/internal-google-ads-tool",
+  },
+  {
+    title: "Modernizing a Legacy CRM Contact Experience",
+    description:
+      "Led redesign and refactor work across contact pages, filtering, and action systems while preserving permissions, communication states, and business-critical legacy behavior.",
+    href: "/projects",
+  },
+  {
+    title: "Fixing Search and Data Access Parity",
+    description:
+      "Reconciled SQL and Elasticsearch query behavior so segmentation, permissions, and contact visibility matched intended business rules across legacy and modern systems.",
+    href: "/projects",
+  },
 ];
 
 export default function Home() {
   return (
     <main
       id="home"
-      className="mx-auto w-full max-w-[1400px] px-6 pb-20 pt-8 lg:px-12 lg:pt-12"
+      className="mx-auto w-full max-w-[1400px] px-6 pb-24 pt-6 sm:pt-8 lg:px-12 lg:pt-10"
     >
-      <section className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="space-y-9">
-          <h1 className="text-[3.4rem] leading-[0.95] tracking-[0.01em] text-[var(--foreground)] sm:text-[4.4rem] lg:text-[6rem]">
-            Senior Software Engineer
+      <section className="grid items-start gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
+        <div className="flex flex-col gap-10 lg:pt-2 sm:gap-12">
+          <h1 className="max-w-[12ch] text-[2.8rem] leading-[1.04] tracking-[0.01em] text-[var(--foreground)] sm:text-[3.45rem] lg:text-[4.45rem]">
+            Senior Product Engineer
           </h1>
+          <h2 className="text-[1.55rem] leading-[1.08] tracking-[0.02em] text-[var(--foreground)] sm:text-[1.8rem] lg:text-[2rem]">
+            for Complex SaaS Systems
+          </h2>
 
-          <p className="max-w-[52ch] text-[1.3rem] leading-[1.65] text-[var(--foreground-soft)]">
-            I build resilient, high-quality web applications with clear
-            architecture, strong frontend systems, and measurable product
-            impact. My focus spans React, Vue, TypeScript, Laravel, SQL, and
-            search-driven platforms.
+          <p className="max-w-[44ch] text-[1.12rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.2rem]">
+            Senior full-stack engineer with 12+ years across CRM, ad tech, QA
+            automation, integrations, and legacy modernization. Strongest in
+            frontend-led product engineering, cross-system debugging, and
+            translating messy business workflows into stable production software
           </p>
 
-          <a className="cta-btn" href="#about">
-            Explore More
+          <a className="cta-btn" href="#projects">
+            View Selected Work
           </a>
         </div>
 
-        <div className="overflow-hidden border border-[var(--line)] bg-[#d9d1c5]">
+        <div className="mx-auto w-full max-w-[600px] overflow-hidden border border-[var(--line)] bg-[#d9d1c5] lg:justify-self-end">
           <Image
-            src="/colorado_kona_me.jpg"
-            alt="David Justice portrait"
+            src="/PXL_20230211_234204974~4.jpg"
+            alt="David Justice with his dog"
             width={3072}
             height={4080}
             priority
-            className="h-full w-full object-cover"
+            className="aspect-[4/5] h-auto w-full object-cover"
           />
         </div>
       </section>
 
-      <section id="about" className="pt-24">
-        <h2 className="text-[3.6rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[4.2rem]">
+      <section id="about" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
           About
         </h2>
-        <p className="mt-8 max-w-[52ch] text-[1.22rem] leading-[1.75] text-[var(--foreground-soft)]">
-          I am a frontend-focused full-stack engineer with a track record of
-          modernizing mature products without disrupting business-critical
-          workflows. I pair design systems and interaction quality with testable
-          architecture, delivery discipline, and pragmatic collaboration across
-          product and engineering teams.
+        <p className="mt-6 max-w-[54ch] text-[1.08rem] leading-[1.72] text-[var(--foreground-soft)] sm:text-[1.14rem]">
+          I’ve always been drawn to systems, how they connect, where they break,
+          and how to make them work better. I started in tech support, moved
+          into QA and automation, and eventually into engineering because I
+          wanted to understand the systems I was testing deeply enough to fix
+          them myself. That path shaped how I work: I care about
+          maintainability, reliability, and the real-world behavior of software
+          under pressure. I’m frontend-minded, but comfortable working through
+          APIs, databases, and search layers when that’s what the product
+          requires. Long term, I’m especially interested in roles that sit
+          closer to the intersection of engineering, product, and system design.
         </p>
       </section>
 
-      <section id="experience" className="pt-24">
-        <h2 className="text-[3.6rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[4.2rem]">
-          Experience
+      <section id="impact" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
+          Selected Impact
         </h2>
-        <div className="mt-8">
-          <div className="section-line grid gap-7 py-10 md:grid-cols-2 md:gap-12">
-            <h3 className="text-[2.2rem] tracking-[0.012em] text-[var(--foreground)]">
-              Senior Frontend Engineer
-            </h3>
-            <p className="max-w-[42ch] text-[1.17rem] leading-[1.68] text-[var(--foreground-soft)]">
-              Owned feature delivery from architecture through testing and
-              release, improving maintainability and confidence across critical
-              product surfaces.
-            </p>
-          </div>
-          <div className="section-line grid gap-7 py-10 md:grid-cols-2 md:gap-12">
-            <h3 className="text-[2.2rem] tracking-[0.012em] text-[var(--foreground)]">
-              Full-Stack Product Builder
-            </h3>
-            <p className="max-w-[42ch] text-[1.17rem] leading-[1.68] text-[var(--foreground-soft)]">
-              Implemented backend services, API contracts, and data flows that
-              enabled performance-minded UX improvements and dependable
-              cross-team integration.
-            </p>
-          </div>
-          <div className="section-line grid gap-7 py-10 md:grid-cols-2 md:gap-12">
-            <h3 className="text-[2.2rem] tracking-[0.012em] text-[var(--foreground)]">
-              Mentor and Technical Lead
-            </h3>
-            <p className="max-w-[42ch] text-[1.17rem] leading-[1.68] text-[var(--foreground-soft)]">
-              Guided peers through code reviews, architecture decisions, and
-              release strategy, raising team standards for delivery speed and
-              software quality.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" className="pt-24">
-        <h2 className="text-[3.6rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[4.2rem]">
-          Education
-        </h2>
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
-          <div className="overflow-hidden border border-[var(--line)]">
-            <Image
-              src="/colorado_kona_me.jpg"
-              alt="David Justice speaking outdoors"
-              width={3072}
-              height={4080}
-              className="h-auto w-full object-cover"
-            />
-          </div>
-          <p className="max-w-[42ch] text-[1.17rem] leading-[1.68] text-[var(--foreground-soft)]">
-            Formal education in computer science and continuous professional
-            growth through production-scale engineering work, platform
-            modernization, and distributed team leadership.
-          </p>
-        </div>
-      </section>
-
-      <section id="achievements" className="pt-24">
-        <h2 className="text-[3.6rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[4.2rem]">
-          Achievements
-        </h2>
-        <ul className="mt-8 space-y-6">
-          {achievements.map((item) => (
+        <ul className="mt-6 list-disc space-y-5 pl-6 marker:text-[var(--foreground)]">
+          {selectedImpact.map((item) => (
             <li
               key={item}
-              className="section-line max-w-[72ch] pt-7 text-[1.12rem] leading-[1.68] text-[var(--foreground-soft)]"
+              className="max-w-[72ch] text-[1.03rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.08rem]"
             >
               {item}
             </li>
@@ -132,24 +103,117 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="contact" className="pt-24">
-        <h2 className="text-[3.6rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[4.2rem]">
+      <section id="projects" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
+          Featured Work
+        </h2>
+        <div className="mt-6 grid gap-5 md:grid-cols-3">
+          {featuredWork.map((work) => (
+            <article
+              key={work.title}
+              className="section-line bg-[var(--surface)] px-5 pb-6 pt-5"
+            >
+              <h3 className="text-[1.55rem] leading-[1.15] tracking-[0.012em] text-[var(--foreground)]">
+                {work.title}
+              </h3>
+              <p className="mt-3 text-[1.02rem] leading-[1.62] text-[var(--foreground-soft)]">
+                {work.description}
+              </p>
+              <Link
+                className="mt-5 inline-flex text-[0.98rem] font-medium text-[var(--foreground)] underline"
+                href={work.href}
+              >
+                View details
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="experience" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
+          Work Experience
+        </h2>
+        <div className="mt-6">
+          <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
+            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
+              Inside Real Estate (including BoomTown platform) | Associate
+              Software Engineer to Senior Software Engineer | 2020 - Present
+            </h3>
+            <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+              Led frontend and full-stack product work across CRM modernization,
+              internal Google Ads account and campaign tooling, and cross-system
+              debugging, including SQL/Elasticsearch parity issues, legacy
+              refactors, and workflow-heavy SaaS features delivered across
+              multiple repositories.
+            </p>
+          </div>
+          <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
+            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
+              BoomTown | Senior Quality Assurance Engineer to Associate Software
+              Test Engineer | 2013 - 2020
+            </h3>
+            <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+              Progressed from QA into automation and engineering while
+              contributing to workflow-heavy CRM features, client-facing product
+              discussions, third-party integrations, and mobile/API testing.
+            </p>
+          </div>
+          <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
+            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
+              Blackbaud | Senior QA Analyst / Support Specialist | 2010 - 2013
+            </h3>
+            <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+              Began in enterprise software support, then moved into QA and early
+              product-facing client work, helping shape a new ticketing platform
+              through structured feedback, test planning, and automation
+              leadership.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
+          Education
+        </h2>
+        <div className="mt-6">
+          <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+            B.A. in Electronic Media/Broadcasting with a Business minor from
+            Appalachian State University, plus focused technical training
+            through The Iron Yard (Ruby/Application Development) and Stanford
+            Introduction to Databases coursework.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" className="pt-18 sm:pt-20 lg:pt-24">
+        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
           Contact
         </h2>
-        <p className="mt-6 max-w-[46ch] text-[1.17rem] leading-[1.68] text-[var(--foreground-soft)]">
-          Open to senior frontend and full-stack opportunities where product
-          impact, engineering quality, and collaborative execution are valued.
+        <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+          If you’re building something interesting or just want to connect, feel
+          free to reach out. I’m always up for thoughtful conversations about
+          engineering, product, and making useful things better.
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 pb-10">
-          <a className="cta-btn" href="mailto:you@example.com">
+        <div className="mt-7 flex flex-wrap gap-4 pb-4">
+          <a className="cta-btn" href="mailto:asu23justice@gmail.com">
             Email Me
           </a>
-          <Link
+          <a
+            className="inline-flex items-center justify-center rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          {/* <Link
             className="inline-flex items-center justify-center rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
             href="/projects"
           >
             View Projects
-          </Link>
+          </Link> */}
         </div>
       </section>
     </main>
