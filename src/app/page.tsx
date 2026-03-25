@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
 
 const selectedImpact = [
   "Led development of an internal Google Ads campaign platform used by digital marketing teams to manage client accounts and campaigns.",
@@ -204,7 +205,7 @@ export default function Home() {
             className="cta-btn inline-flex items-center gap-3"
             href="mailto:asu23justice@gmail.com"
           >
-            <Mail className="h-5 w-5" aria-hidden="true" />
+            <HiOutlineMail className="h-5 w-5" aria-hidden="true" />
             Email Me
           </a>
           <a
@@ -213,7 +214,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <Linkedin className="h-5 w-5" aria-hidden="true" />
+            <FaLinkedinIn className="h-5 w-5" aria-hidden="true" />
             LinkedIn
           </a>
           <a
@@ -222,7 +223,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <Instagram className="h-5 w-5" aria-hidden="true" />
+            <FaInstagram className="h-5 w-5" aria-hidden="true" />
             @asu23justice
           </a>
         </div>
