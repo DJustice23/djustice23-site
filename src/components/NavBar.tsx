@@ -6,16 +6,17 @@ import { usePathname } from "next/navigation";
 const homeLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
+  { href: "#impact", label: "Selected Impact" },
+  { href: "#projects", label: "Featured Work" },
   { href: "#experience", label: "Work Experience" },
   { href: "#education", label: "Education" },
-  { href: "#achievements", label: "Achievements" },
   { href: "/site-info", label: "Site Info" },
   { href: "#contact", label: "Contact" },
 ];
 
 const siteLinks = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
+  //{ href: "/projects", label: "Projects" },
   { href: "/site-info", label: "Site Info" },
 ];
 
