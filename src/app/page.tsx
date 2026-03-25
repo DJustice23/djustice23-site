@@ -20,13 +20,13 @@ const featuredWork = [
     title: "Modernizing a Legacy CRM Contact Experience",
     description:
       "Led redesign and refactor work across contact pages, filtering, and action systems while preserving permissions, communication states, and business-critical legacy behavior.",
-    href: "/projects",
+    href: "/projects/crm-contact-modernization",
   },
   {
     title: "Fixing Search and Data Access Parity",
     description:
       "Reconciled SQL and Elasticsearch query behavior so segmentation, permissions, and contact visibility matched intended business rules across legacy and modern systems.",
-    href: "/projects",
+    href: "/projects/search-data-parity",
   },
 ];
 
@@ -180,9 +180,11 @@ export default function Home() {
         <div className="mt-6">
           <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
             B.A. in Electronic Media/Broadcasting with a Business minor from
-            Appalachian State University, plus focused technical training
-            through The Iron Yard (Ruby/Application Development) and Stanford
-            Introduction to Databases coursework.
+            Appalachian State University, along with technical training through
+            The Iron Yard (Ruby/Application Development), Stanford coursework in
+            Introduction to Databases, Certified ScrumMaster (CSM)
+            certification, and ongoing AWS Skill Builder coursework toward the
+            Machine Learning Engineer Associate.
           </p>
         </div>
       </section>
@@ -202,7 +204,7 @@ export default function Home() {
           </a>
           <a
             className="inline-flex items-center justify-center rounded-full border border-[var(--foreground)] px-6 py-3 text-[var(--foreground)] transition-colors hover:bg-[#e4e3df]"
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/david-c-justice/"
             target="_blank"
             rel="noreferrer"
           >
