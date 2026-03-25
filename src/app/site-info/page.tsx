@@ -1,10 +1,10 @@
 const buildHighlights = [
-  "Built with Next.js 16 + React 19 + TypeScript for a modern component architecture and maintainable, strongly typed UI logic.",
-  "Styled with Tailwind CSS v4 and CSS design tokens, creating a consistent visual system with reusable spacing, typography, and color patterns.",
-  "Designed for responsive behavior across desktop and mobile with layout constraints, readable line lengths, and scalable typography.",
-  "Used semantic HTML structure and clear section hierarchy to improve accessibility, scanning, and long-form portfolio readability.",
-  "Optimized core media rendering with Next Image for responsive images, sizing control, and better loading behavior.",
-  "Structured the project with reusable app routes and content-driven sections to support future growth into deeper case studies.",
+  "Built with Next.js, React, and TypeScript to keep the project strongly typed, component-driven, and extensible for future case studies and interactive features.",
+  "Structured the layout around readable typography, spacing, and section hierarchy so the site works as both a portfolio and a long-form product narrative.",
+  "Designed for responsive behavior across desktop and mobile using scalable layout constraints rather than one-off breakpoint hacks.",
+  "Used semantic structure and reusable UI patterns to keep the codebase maintainable as the site grows beyond a single-page portfolio.",
+  "Optimized media rendering with Next Image to improve loading behavior and image sizing across screen sizes.",
+  "Built the project as a foundation for future additions including deeper project writeups, interactive demos, and AI-powered features.",
 ];
 
 export default function SiteInfoPage() {
@@ -16,12 +16,12 @@ export default function SiteInfoPage() {
         </h1>
         <p className="mt-5 max-w-[58ch] text-[1.05rem] leading-[1.68] text-[var(--foreground-soft)] sm:text-[1.1rem]">
           This portfolio is intentionally designed as a working frontend sample,
-          not just a static resume page. The build emphasizes component
-          structure, responsive design, typography-driven layout, and production
-          implementation details that reflect how I ship user-facing interfaces.
+          not just a static resume page. The approach emphasizes engineering
+          judgment, maintainable structure, and product-minded frontend
+          execution.
         </p>
         <h2 className="mt-12 text-[2.2rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[2.5rem]">
-          How This Site Is Built
+          How I Approached This Build
         </h2>
         <ul className="mt-6 list-disc space-y-5 pl-6 marker:text-[var(--foreground)]">
           {buildHighlights.map((item) => (
