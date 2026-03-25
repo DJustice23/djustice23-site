@@ -1,11 +1,34 @@
 [
   {
     "slug": "internal-google-ads-tool",
-    "name": "Google Ads Publishing Tool",
-    "summary": "Built an internal tool that uses Google Ads API to publish and manage campaigns, account budgets, and ads for clients",
-    "impact": "Automated workflows and increased productivity with less errors than working in Google Ads UI",
-    "stack": ["React", "Laravel", "MUI", "Google Ads API"],
-    "repo": "PRIVATE",
-    "caseStudy": "/projects/internal-google-ads-tool"
+    "name": "Internal Google Ads Campaign Management Platform",
+    "summary": "Built an internal campaign management platform used by digital marketing teams to manage client Google Ads accounts, campaign publishing workflows, budgets, and related account operations more efficiently than working directly in the Google Ads UI.",
+    "impact": "Improved operational efficiency for campaign-management workflows by reducing manual steps, increasing consistency, and creating a more tailored experience than relying solely on the external ad platform UI.",
+    "stack": [
+      "React",
+      "Material UI",
+      "Laravel",
+      "Google Ads API",
+      "CSV import tooling"
+    ],
+    "overview": "Built an internal campaign management platform used by digital marketing teams to manage client Google Ads accounts, campaign publishing workflows, budgets, and related account operations more efficiently than working directly in the Google Ads UI.",
+    "myRole": "Served as the sole frontend engineer during early development, defining the frontend architecture and building the application in React and Material UI. Also contributed backend-supporting workflows, including Google Ads API research, account import tooling, and implementation decisions tied to campaign-management operations.",
+    "problem": "Marketing teams needed a faster, more structured way to manage campaign setup and publishing across many client accounts. Working directly in the native Google Ads interface created friction around repeatable workflows, account setup, and operational consistency.",
+    "approach": "Designed and implemented an internal application that centralized campaign management workflows into a purpose-built interface aligned with how internal teams actually operated. The work included frontend architecture, reusable UI patterns, API-connected workflows, and support for account setup processes such as CSV-based imports.",
+    "outcome": "Improved operational efficiency for campaign-management workflows by reducing manual steps, increasing consistency, and creating a more tailored experience than relying solely on the external ad platform UI. Just as importantly, it created an internal foundation that could evolve alongside team needs."
+  },
+  {
+    "slug": "crm-contact-modernization",
+    "name": "Modernizing a Legacy CRM Contact Experience",
+    "summary": "Led redesign and refactor work across contact pages, filtering, and action systems while preserving permissions, communication states, and business-critical legacy behavior.",
+    "impact": "Improved user experience and maintainability of CRM contact workflows.",
+    "stack": ["React", "PHP", "Laravel", "SQL"]
+  },
+  {
+    "slug": "search-data-parity",
+    "name": "Fixing Search and Data Access Parity",
+    "summary": "Reconciled SQL and Elasticsearch query behavior so segmentation, permissions, and contact visibility matched intended business rules across legacy and modern systems.",
+    "impact": "Ensured consistent data access and search results across the platform.",
+    "stack": ["Elasticsearch", "SQL", "PHP", "Laravel"]
   }
 ]
