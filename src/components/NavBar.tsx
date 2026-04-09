@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const showSiteInfo = process.env.NODE_ENV !== "production";
-
 const homeLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -18,18 +16,15 @@ const homeLinks = [
 
 const siteLinks = [
   { href: "/", label: "Home" },
+  { href: "/site-info", label: "Site Info" },
 ];
 
 export default function NavBar() {
   const pathname = usePathname();
   const links =
     pathname === "/"
-      ? showSiteInfo
-        ? [...homeLinks, { href: "/site-info", label: "Site Info" }]
-        : homeLinks
-      : showSiteInfo
-        ? [...siteLinks, { href: "/site-info", label: "Site Info" }]
-        : siteLinks;
+      ? [...homeLinks, { href: "/site-info", label: "Site Info" }]
+      : siteLinks;
   const sectionLinks = homeLinks.filter((link) => link.href.startsWith("#"));
   const [activeSectionHref, setActiveSectionHref] = useState("#home");
 
@@ -95,7 +90,7 @@ export default function NavBar() {
       <div className="mx-auto flex h-16 w-full max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <Link
           href="/"
-          className="text-[2.15rem] leading-none tracking-[0.01em] text-[var(--foreground)]"
+          className="text-[1.5rem] leading-none tracking-[-0.01em] text-[var(--foreground)]"
         >
           David C. Justice
         </Link>

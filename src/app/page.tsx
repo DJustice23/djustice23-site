@@ -32,29 +32,29 @@ const featuredWork = [
   },
 ];
 
+const sectionH2 =
+  "text-[2.2rem] leading-[1.1] tracking-[-0.01em] text-[var(--foreground)] sm:text-[2.6rem] lg:text-[3rem]";
+
 export default function Home() {
   return (
     <main
       id="home"
-      className="mx-auto w-full max-w-[1400px] px-6 pb-24 pt-6 sm:pt-8 lg:px-12 lg:pt-10"
+      className="mx-auto w-full max-w-[1400px] px-6 pb-14 pt-6 sm:pt-8 lg:px-12 lg:pt-10"
     >
       <section className="grid items-start gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
-        <div className="flex flex-col gap-10 lg:pt-2 sm:gap-12">
-          <h1 className="max-w-[12ch] text-[2.8rem] leading-[1.04] tracking-[0.01em] text-[var(--foreground)] sm:text-[3.45rem] lg:text-[4.45rem]">
-            Senior Product Engineer
+        <div className="flex flex-col gap-7 lg:pt-2 sm:gap-9">
+          <h1 className="max-w-[16ch] text-[2.8rem] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[4.2rem]">
+            Senior Full-Stack Engineer for Complex SaaS Systems
           </h1>
-          <h2 className="text-[1.55rem] leading-[1.08] tracking-[0.02em] text-[var(--foreground)] sm:text-[1.8rem] lg:text-[2rem]">
-            for Complex SaaS Systems
-          </h2>
 
-          <p className="max-w-[44ch] text-[1.12rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.2rem]">
+          <p className="max-w-[48ch] text-[1.08rem] leading-[1.7] text-[var(--foreground-soft)] sm:text-[1.15rem]">
             Senior full-stack engineer with 12+ years across CRM, ad tech, QA
             automation, integrations, and legacy modernization. Strongest in
             frontend-led product engineering, cross-system debugging, and
-            translating messy business workflows into stable production software
+            translating messy business workflows into stable production software.
           </p>
 
-          <a className="cta-btn" href="#projects">
+          <a className="cta-btn self-start" href="#projects">
             View Selected Work
           </a>
         </div>
@@ -71,33 +71,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          About
-        </h2>
-        <p className="mt-6 max-w-[54ch] text-[1.08rem] leading-[1.72] text-[var(--foreground-soft)] sm:text-[1.14rem]">
-          I’ve always been drawn to systems, how they connect, where they break,
-          and how to make them work better. I started in tech support, moved
-          into QA and automation, and eventually into engineering because I
+      <section id="about" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>About</h2>
+        <p className="mt-6 max-w-[52ch] text-[1.05rem] leading-[1.75] text-[var(--foreground-soft)] sm:text-[1.1rem]">
+          I've always been drawn to systems — how they connect, where they
+          break, and how to make them work better. I started in tech support,
+          moved into QA and automation, and eventually into engineering because I
           wanted to understand the systems I was testing deeply enough to fix
           them myself. That path shaped how I work: I care about
           maintainability, reliability, and the real-world behavior of software
-          under pressure. I’m frontend-minded, but comfortable working through
-          APIs, databases, and search layers when that’s what the product
-          requires. Long term, I’m especially interested in roles that sit
+          under pressure. I'm frontend-minded, but comfortable working through
+          APIs, databases, and search layers when that's what the product
+          requires. Long term, I'm especially interested in roles that sit
           closer to the intersection of engineering, product, and system design.
         </p>
       </section>
 
-      <section id="impact" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          Selected Impact
-        </h2>
+      <section id="impact" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>Selected Impact</h2>
         <ul className="mt-6 list-disc space-y-5 pl-6 marker:text-[var(--foreground)]">
           {selectedImpact.map((item) => (
             <li
               key={item}
-              className="max-w-[72ch] text-[1.03rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.08rem]"
+              className="max-w-[62ch] text-[1.03rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.08rem]"
             >
               {item}
             </li>
@@ -105,43 +101,43 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="projects" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          Featured Work
-        </h2>
+      <section id="projects" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>Featured Work</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">
           {featuredWork.map((work) => (
             <article
               key={work.title}
               className="section-line bg-[var(--surface)] px-5 pb-6 pt-5"
             >
-              <h3 className="text-[1.55rem] leading-[1.15] tracking-[0.012em] text-[var(--foreground)]">
+              <h3 className="text-[1.45rem] leading-[1.2] tracking-[-0.01em] text-[var(--foreground)]">
                 {work.title}
               </h3>
-              <p className="mt-3 text-[1.02rem] leading-[1.62] text-[var(--foreground-soft)]">
+              <p className="mt-3 text-[1rem] leading-[1.65] text-[var(--foreground-soft)]">
                 {work.description}
               </p>
               <Link
-                className="mt-5 inline-flex text-[0.98rem] font-medium text-[var(--foreground)] underline"
+                className="mt-5 inline-flex text-[0.95rem] font-semibold text-[var(--foreground)] underline underline-offset-2"
                 href={work.href}
               >
-                View details
+                View details →
               </Link>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="experience" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          Work Experience
-        </h2>
+      <section id="experience" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>Work Experience</h2>
         <div className="mt-6">
           <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
-            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
-              Inside Real Estate (including BoomTown platform) | Associate
-              Software Engineer to Senior Software Engineer | 2020 - Present
-            </h3>
+            <div>
+              <h3 className="text-[1.45rem] leading-[1.2] tracking-[-0.01em] text-[var(--foreground)]">
+                Inside Real Estate
+              </h3>
+              <p className="mt-1 text-[0.92rem] font-medium uppercase tracking-[0.08em] text-[var(--foreground-soft)]">
+                Associate → Senior Software Engineer · 2020–Present
+              </p>
+            </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
               Led frontend and full-stack product work across CRM modernization,
               internal Google Ads account and campaign tooling, and cross-system
@@ -151,10 +147,14 @@ export default function Home() {
             </p>
           </div>
           <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
-            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
-              BoomTown | Senior Quality Assurance Engineer to Associate Software
-              Test Engineer | 2013 - 2020
-            </h3>
+            <div>
+              <h3 className="text-[1.45rem] leading-[1.2] tracking-[-0.01em] text-[var(--foreground)]">
+                BoomTown
+              </h3>
+              <p className="mt-1 text-[0.92rem] font-medium uppercase tracking-[0.08em] text-[var(--foreground-soft)]">
+                Senior QA Engineer → Associate Software Test Engineer · 2013–2020
+              </p>
+            </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
               Progressed from QA into automation and engineering while
               contributing to workflow-heavy CRM features, client-facing product
@@ -162,9 +162,14 @@ export default function Home() {
             </p>
           </div>
           <div className="section-line grid gap-5 py-8 md:grid-cols-2 md:gap-10">
-            <h3 className="text-[1.95rem] leading-[1.06] tracking-[0.012em] text-[var(--foreground)]">
-              Blackbaud | Senior QA Analyst / Support Specialist | 2010 - 2013
-            </h3>
+            <div>
+              <h3 className="text-[1.45rem] leading-[1.2] tracking-[-0.01em] text-[var(--foreground)]">
+                Blackbaud
+              </h3>
+              <p className="mt-1 text-[0.92rem] font-medium uppercase tracking-[0.08em] text-[var(--foreground-soft)]">
+                Senior QA Analyst / Support Specialist · 2010–2013
+              </p>
+            </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
               Began in enterprise software support, then moved into QA and early
               product-facing client work, helping shape a new ticketing platform
@@ -175,10 +180,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="education" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          Education
-        </h2>
+      <section id="education" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>Education</h2>
         <div className="mt-6">
           <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
             B.A. in Electronic Media/Broadcasting with a Business minor from
@@ -191,13 +194,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="pt-18 sm:pt-20 lg:pt-24">
-        <h2 className="text-[2.9rem] leading-none tracking-[0.015em] text-[var(--foreground)] sm:text-[3.4rem] lg:text-[3.8rem]">
-          Contact
-        </h2>
+      <section id="contact" className="pt-12 sm:pt-14 lg:pt-18">
+        <h2 className={sectionH2}>Contact</h2>
         <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
-          If you’re building something interesting or just want to connect, feel
-          free to reach out. I’m always up for thoughtful conversations about
+          If you're building something interesting or just want to connect, feel
+          free to reach out. I'm always up for thoughtful conversations about
           engineering, product, and making useful things better.
         </p>
         <div className="mt-7 flex flex-wrap gap-4 pb-4">
