@@ -90,7 +90,7 @@ export default function NavBar() {
       <div className="mx-auto flex h-16 w-full max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <Link
           href="/"
-          className="text-[1.5rem] leading-none tracking-[-0.01em] text-[var(--foreground)]"
+          className="text-[1.6rem] leading-none tracking-[0.01em] text-[var(--foreground)]"
         >
           David C. Justice
         </Link>
