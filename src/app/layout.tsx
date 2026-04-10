@@ -17,7 +17,13 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "David C. Justice — Senior Software Engineer",
-  description: "Portfolio, projects, resume, and an 'Ask Justice' demo.",
+  description: "Portfolio of David C. Justice — Senior Full-Stack Engineer for complex B2B SaaS systems.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
