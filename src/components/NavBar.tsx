@@ -23,8 +23,8 @@ export default function NavBar() {
   const pathname = usePathname();
   const links =
     pathname === "/"
-      ? [...homeLinks, { href: "/site-info", label: "Site Info" }]
-      : siteLinks;
+      ? [...homeLinks, ...(process.env.NODE_ENV !== "production" ? [{ href: "/site-info", label: "Site Info" }] : [])]
+      : siteLinks.filter(l => process.env.NODE_ENV !== "production" || l.href !== "/site-info");
   const sectionLinks = homeLinks.filter((link) => link.href.startsWith("#"));
   const [activeSectionHref, setActiveSectionHref] = useState("#home");
 

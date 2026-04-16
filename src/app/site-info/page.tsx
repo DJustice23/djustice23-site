@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 const buildHighlights = [
   "Built as a product surface, not just a static explainer page, so live data and operational context can sit alongside narrative content.",
   "Uses a single route-backed dashboard payload to keep the client lean while still supporting weather, music, and analytics integrations.",
@@ -29,6 +31,8 @@ const plannedIntegrations = [
 ];
 
 export default function SiteInfoPage() {
+  if (process.env.NODE_ENV === "production") notFound();
+
   return (
     <main className="mx-auto w-full max-w-[1400px] px-6 pb-24 pt-10 sm:pt-12 lg:px-12 lg:pt-14">
       <div className="max-w-[62ch]">
