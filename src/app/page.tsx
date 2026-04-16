@@ -4,12 +4,12 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 
 const selectedImpact = [
-  "Sole frontend engineer for an internal Google Ads platform used by a 34-person marketing team managing 3,000+ client accounts and $784K+ in ad spend — replaced a manual setup process with automated budget management and CRM integrations.",
-  "Built an AI-assisted workflow using Claude, MCP, and filesystem access to generate acceptance criteria and technical documentation from Jira tickets, saving an estimated 2–3 sprint points per sprint.",
-  "Drove Cursor adoption across the engineering team and established shared rules that improved coding consistency, reduced code review friction, and reinforced platform standards.",
-  "Reworked Elasticsearch filtering logic to align SQL and search-index behavior, improving lead segmentation and contact visibility accuracy across the CRM.",
-  "Led frontend engineering for a major CRM contact redesign, partnering with product and design from discovery through delivery — used by thousands of agents daily.",
-  "Traveled on-site to real estate brokerages and represented engineering at client conferences — translating real-world usage and customer pain points directly into product and engineering input.",
+  "Served as primary engineer, designer, and informal product owner for an internal Google Ads platform — translating digital marketing operational needs into a user-friendly tool managing 3,000+ client accounts and $784K+ in ad spend.",
+  "Used FullStory and Amplitude data alongside the Director of Product Management to identify UX friction points, validate behavior patterns, and influence roadmap and feature decisions.",
+  "Built an AI-assisted workflow using Claude, MCP, and filesystem access to generate acceptance criteria and technical documentation from Jira tickets — saving an estimated 2–3 sprint points per sprint.",
+  "Created architectural diagrams, implementation guides, and technical documentation for complex cross-application initiatives, improving handoff clarity and planning across teams.",
+  "Traveled on-site to real estate brokerages and represented engineering at client conferences — observing real-world usage, gathering structured feedback, and translating customer pain points into product direction.",
+  "Acted as technical liaison during client escalations and delivered product demos and training for client-facing and cross-functional teams.",
 ];
 
 const featuredWork = [
@@ -49,10 +49,10 @@ export default function Home() {
           </h1>
 
           <p className="max-w-[46ch] text-[1.1rem] leading-[1.68] text-[var(--foreground-soft)] sm:text-[1.18rem]">
-            Senior full-stack engineer with 12+ years across CRM, ad tech, QA
-            automation, integrations, and legacy modernization. Strongest in
-            frontend-led product engineering, cross-system debugging, and
-            translating messy business workflows into stable production software.
+            12+ years bridging engineering, product, and customers in B2B SaaS.
+            I translate complex business and technical requirements into working
+            software — and into language that stakeholders, clients, and teams
+            can act on.
           </p>
 
           <a className="cta-btn self-start" href="#projects">
@@ -75,19 +75,20 @@ export default function Home() {
       <section id="about" className="pt-10 sm:pt-12 lg:pt-14">
         <h2 className={sectionH2}>About</h2>
         <p className="mt-5 max-w-[52ch] text-[1.08rem] leading-[1.72] text-[var(--foreground-soft)] sm:text-[1.14rem]">
-          I've always been drawn to systems — how they connect, where they
-          break, and how to make them work better. I started in tech support,
-          moved into QA and automation, and eventually into engineering because I
-          wanted to understand the systems I was testing deeply enough to fix
-          them myself. That path shaped how I work: I care about
-          maintainability, reliability, and the real-world behavior of software
-          under pressure. I'm frontend-minded but comfortable across APIs,
-          databases, and search layers. Lately I've been building AI-assisted
-          workflows with Claude and MCP that have meaningfully changed how my
-          team plans and ships. Long term, I'm interested in roles closer to the
-          intersection of engineering, product, and system design — senior
-          engineering, TPM, or solutions engineer at a B2B SaaS company where
-          the work actually matters.
+          My career has always sat at the intersection of engineering, product,
+          and customer needs. I started in enterprise support, moved into QA, and
+          eventually into software engineering — not to leave the customer-facing
+          work behind, but because I wanted the technical depth to actually solve
+          the problems I was seeing. That path gives me something most engineers
+          don't have: I can write the code, run the demo, shape the requirements,
+          and explain the tradeoffs to a non-technical stakeholder in the same
+          conversation. I've traveled on-site to client brokerages, delivered
+          product demos, acted as technical liaison during escalations, and used
+          FullStory and Amplitude data to influence roadmap decisions. Lately
+          I've been building AI-assisted workflows with Claude and MCP that have
+          meaningfully changed how my team plans and ships. I'm looking for a
+          TPM or Solutions Engineer role at a B2B SaaS company where deep
+          technical credibility and customer-facing communication both matter.
         </p>
       </section>
 
@@ -143,12 +144,12 @@ export default function Home() {
               </p>
             </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
-              Leading frontend and full-stack product work across CRM
-              modernization, internal ad tech tooling, and cross-system
-              debugging at a platform serving 200,000+ daily users. Own complex
-              features end-to-end, influence roadmap with behavioral data, and
-              build AI-assisted workflows that have changed how the team plans
-              and ships.
+              Primary engineer, designer, and product owner for an internal
+              Google Ads campaign platform. Used FullStory and Amplitude with
+              the Director of PM to shape roadmap decisions. Created
+              architectural documentation and implementation guides for
+              cross-team initiatives. Built AI-assisted workflows with Claude
+              and MCP that reduced sprint planning overhead across the team.
             </p>
           </div>
           <div className="section-line grid gap-5 py-7 md:grid-cols-2 md:gap-10">
@@ -161,11 +162,12 @@ export default function Home() {
               </p>
             </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
-              Contributed across frontend and backend product development on a
-              CRM platform serving tens of thousands of real estate
-              professionals. Worked directly with product and leadership to
-              shape workflow-heavy features, traveled on-site to brokerages, and
-              acted as technical liaison during client escalations.
+              Worked directly with product managers and company leadership to
+              shape workflow-heavy CRM features, advising on edge cases, user
+              behavior, and business rules. Traveled on-site to brokerages and
+              represented engineering at client conferences. Acted as technical
+              liaison during escalations and delivered product demos and
+              enablement sessions for client-facing teams.
             </p>
           </div>
           <div className="section-line grid gap-5 py-7 md:grid-cols-2 md:gap-10">
@@ -178,11 +180,12 @@ export default function Home() {
               </p>
             </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
-              Progressed from manual QA into automation engineering through
-              demonstrated technical growth. Built and maintained a test
-              automation framework using Cucumber, Ruby, and Selenium WebDriver.
-              Shipped a Scala-based mobile app with AWS integrations, ramping
-              quickly on an unfamiliar stack under active delivery pressure.
+              Progressed from manual QA into automation and software engineering
+              through multiple promotions. Helped shape lead-routing and
+              claim-based assignment workflows based on real brokerage
+              operations. Built and maintained a Cucumber/Ruby/Selenium test
+              automation framework and performed API testing for BoomTown's
+              first mobile app.
             </p>
           </div>
           <div className="section-line grid gap-5 py-7 md:grid-cols-2 md:gap-10">
@@ -196,10 +199,11 @@ export default function Home() {
             </div>
             <p className="max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
               Selected to work directly with early users of a newly built
-              ticketing platform — gathering bugs, explaining product behavior,
-              and translating feedback into structured input for product, design,
-              and engineering. Advanced to Senior QA Analyst during a
-              high-stakes early rollout.
+              ticketing platform — part QA, part customer success, part product
+              researcher. Gathered bugs, explained product behavior, and
+              translated feedback into structured input for product, design, and
+              engineering. Advanced to Senior QA Analyst during a high-stakes
+              rollout.
             </p>
           </div>
         </div>
@@ -245,9 +249,10 @@ export default function Home() {
       <section id="contact" className="pt-10 sm:pt-12 lg:pt-14">
         <h2 className={sectionH2}>Contact</h2>
         <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
-          If you're building something interesting or just want to connect, feel
-          free to reach out. I'm always up for thoughtful conversations about
-          engineering, product, and making useful things better.
+          If you're building a product that needs someone who can think across
+          engineering, product, and customer needs — or if you just want to
+          connect — feel free to reach out. I'm open to TPM and Solutions
+          Engineer roles at B2B SaaS companies.
         </p>
         <div className="mt-7 flex flex-wrap gap-4 pb-4">
           <a
