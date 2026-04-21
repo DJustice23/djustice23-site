@@ -16,7 +16,7 @@ const featuredWork = [
   {
     title: "Internal Google Ads Platform",
     description:
-      "Served as the sole frontend engineer for an internal campaign platform used by a 34-person digital marketing team managing 3,000+ client accounts and $784K+ in ad spend. Shaped early architecture in React/MUI and built automated budget management, in-app controls, and CRM integrations.",
+      "Served as the leading frontend engineer for an internal campaign platform used by a 34-person digital marketing team managing 3,000+ client accounts and $784K+ in ad spend. Built in React and Material UI (MUI) against a PHP/Laravel/SQL backend, including Google Ads API workflows and CSV-based account import tooling.",
     href: "/projects/internal-google-ads-tool",
   },
   {
@@ -86,9 +86,7 @@ export default function Home() {
           product demos, acted as technical liaison during escalations, and used
           FullStory and Amplitude data to influence roadmap decisions. Lately
           I've been building AI-assisted workflows with Claude and MCP that have
-          meaningfully changed how my team plans and ships. I'm looking for a
-          TPM or Solutions Engineer role at a B2B SaaS company where deep
-          technical credibility and customer-facing communication both matter.
+          meaningfully changed how my team plans and ships.
         </p>
       </section>
 
@@ -251,8 +249,7 @@ export default function Home() {
         <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-[1.65] text-[var(--foreground-soft)] sm:text-[1.1rem]">
           If you're building a product that needs someone who can think across
           engineering, product, and customer needs — or if you just want to
-          connect — feel free to reach out. I'm open to TPM and Solutions
-          Engineer roles at B2B SaaS companies.
+          connect — feel free to reach out. 
         </p>
         <div className="mt-7 flex flex-wrap gap-4 pb-4">
           <a
